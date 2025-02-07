@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi Aplicación Web</title>
+</head>
+<body>
+    <h1>Bienvenido a mi aplicación web</h1>
+    <form id="getForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="button" onclick="loadGetMsg()">Enviar GET</button>
+    </form>
+    <div id="getResponse"></div>
+
+    <form id="postForm">
+        <label for="postname">Nombre:</label>
+        <input type="text" id="postname" name="name" required>
+        <button type="button" onclick="loadPostMsg()">Enviar POST</button>
+    </form>
+    <div id="postResponse"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
